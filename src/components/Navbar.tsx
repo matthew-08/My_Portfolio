@@ -39,7 +39,7 @@ function Navbar() {
       as="nav"
       width="100%"
       align="center"
-      padding="2rem"
+      padding={isSmallerThan700 ? '1rem' : '2rem'}
       borderBottom="1px solid"
       borderColor="gray.400"
     >

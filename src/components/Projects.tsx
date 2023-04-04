@@ -126,7 +126,7 @@ const projects: Project[] = [
 function Projects() {
   return (
     <PageLayout>
-      <Flex flexDir="column" maxWidth="800px" minWidth="800px">
+      <Flex flexDir="column" maxWidth="800px">
         <Box borderBottom="2px solid" pb="1rem" borderColor="gray.400">
           <Heading fontSize="3rem">My Projects</Heading>
         </Box>

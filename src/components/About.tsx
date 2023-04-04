@@ -7,6 +7,7 @@ import {
   useColorMode,
   Heading,
   Link,
+  useMediaQuery,
 } from '@chakra-ui/react';
 import React from 'react';
 import { NavLink } from 'react-router-dom';
@@ -15,16 +16,31 @@ import me from '../img/me.png';
 
 function About() {
   const { colorMode } = useColorMode();
+  const [isSmalerThan1200] = useMediaQuery('(max-width:1200px)');
   return (
     <PageLayout>
-      <Flex minH="600px" mx="auto" maxW="1200px">
+      <Flex
+        minH="600px"
+        mx="auto"
+        maxW="1200px"
+        flexDir={isSmalerThan1200 ? 'column' : 'row'}
+        alignItems={isSmalerThan1200 ? 'center' : ''}
+      >
         <HStack
           height="100%"
           minW="20%"
-          borderRight="2px solid"
+          borderRight={isSmalerThan1200 ? '0' : '2px solid'}
+          borderBottom={isSmalerThan1200 ? '2px solid' : '0'}
+          mb={isSmalerThan1200 ? '2rem' : '0'}
           borderColor="gray.200"
         >
-          <VStack mb="auto" mr="2rem">
+          <Flex
+            mb="auto"
+            mr={isSmalerThan1200 ? '0' : '2rem'}
+            flexDir="column"
+            align="center"
+            textAlign="center"
+          >
             <Image
               src={me}
               boxSize="200px"
@@ -34,6 +50,7 @@ function About() {
             <Text
               fontSize="1.42rem"
               color={colorMode === 'dark' ? 'gray.400' : ''}
+              textAlign="center"
             >
               Matthew Crosby
             </Text>
@@ -44,7 +61,7 @@ function About() {
             >
               Full Stack Developer
             </Text>
-          </VStack>
+          </Flex>
         </HStack>
         <Flex flexGrow="1" flexDir="column" ml="2rem">
           <Text
@@ -60,7 +77,7 @@ function About() {
             front of my computer I'm likely hunched over my guitar instead!
             <br />
             <br />
-            In pursuit of consistent development in my craft, I'm continously
+            In pursuit of consistent development of my craft, I'm continously
             working on various full-stack projects in order to hone my skills
             and integerate learned technologies into my workflow. Currently, I'm
             working on a full-stack e-commerce application which utilizes
