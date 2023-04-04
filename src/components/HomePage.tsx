@@ -10,11 +10,12 @@ import {
 import React from 'react';
 import { Icon } from '@iconify/react';
 import { EmailIcon } from '@chakra-ui/icons';
+import PageLayout from './PageLayout';
 
 function HomePage() {
   const { colorMode } = useColorMode();
   return (
-    <Flex as="main" width="100%" justifyContent="center">
+    <PageLayout>
       <Flex align="center" maxW="800px" mt="3rem" height="100%">
         <VStack align="flex-start">
           <Heading
@@ -82,7 +83,7 @@ function HomePage() {
           </HStack>
         </VStack>
       </Flex>
-    </Flex>
+    </PageLayout>
   );
 }
 

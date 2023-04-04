@@ -17,15 +17,6 @@ const theme = extendTheme({
         '-webkit-text-size-adjust': '100%',
         color: mode('#404040', 'white'),
       }),
-      a: (props: StyleFunctionProps) => ({
-        color: mode('gray.700', 'white'),
-      }),
-      p: (props: StyleFunctionProps) => ({
-        color: mode('gray.700', 'white'),
-      }),
-      h1: {
-        color: mode('#404040', 'white'),
-      },
     },
     main: {
       black: '#404040',
