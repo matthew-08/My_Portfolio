@@ -1,8 +1,9 @@
 import './global.css';
-import { BrowserRouter } from 'react-router-dom';
+import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import { ColorModeScript } from '@chakra-ui/react';
 import Navbar from './components/Navbar';
 import theme from './theme';
+import HomePage from './components/HomePage';
 
 function App() {
   return (
@@ -10,6 +11,9 @@ function App() {
       <BrowserRouter>
         <ColorModeScript initialColorMode={theme.config.initialColorMode} />
         <Navbar />
+        <Routes>
+          <Route path="/" element={<HomePage />} />
+        </Routes>
       </BrowserRouter>
     </div>
   );
