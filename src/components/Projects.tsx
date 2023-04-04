@@ -32,7 +32,7 @@ function Projects() {
     <PageLayout>
       <Flex flexDir="column" maxWidth="800px" minWidth="800px">
         <Box borderBottom="2px solid" pb="1rem" borderColor="gray.400">
-          <Heading>My Projects</Heading>
+          <Heading fontSize="3rem">My Projects</Heading>
         </Box>
         <VStack minW="100%">
           {projects.map((project) => {
