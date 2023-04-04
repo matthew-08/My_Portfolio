@@ -5,14 +5,12 @@ import React from 'react';
 function ToggleColorMode() {
   const { colorMode, toggleColorMode } = useColorMode();
   return (
-    <Button
-      position="absolute"
-      top="0"
-      right="0"
-      margin="1rem"
-      onClick={() => toggleColorMode()}
-    >
-      {colorMode === 'dark' ? <MoonIcon /> : <SunIcon />}
+    <Button ml="5rem" background="none" onClick={() => toggleColorMode()}>
+      {colorMode === 'dark' ? (
+        <MoonIcon boxSize={17} />
+      ) : (
+        <SunIcon boxSize={17} />
+      )}
     </Button>
   );
 }
