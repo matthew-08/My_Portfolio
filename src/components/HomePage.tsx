@@ -57,7 +57,28 @@ function HomePage() {
               icon={<Icon icon="mdi:linkedin" width="3rem" />}
             />
           </HStack>
-          <Flex width="100%" />
+          <Flex width="100%" borderBottom="1px solid" borderColor="gray.400">
+            <Heading
+              mt="1rem"
+              mb="0.5rem"
+              fontFamily="Inter"
+              color={colorMode === 'dark' ? 'white' : '#404040'}
+            >
+              My Skillset:
+            </Heading>
+          </Flex>
+          <HStack>
+            <Flex>
+              <Text
+                display="inline-block"
+                fontSize="1.2rem"
+                color={colorMode === 'dark' ? 'gray.400' : ''}
+                as="span"
+              >
+                TypeScript, JavaScript, React, Redux
+              </Text>
+            </Flex>
+          </HStack>
         </VStack>
       </Flex>
     </Flex>
