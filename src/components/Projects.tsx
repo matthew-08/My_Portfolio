@@ -83,7 +83,43 @@ const projects: Project[] = [
     projectLinks: {
       github: 'https://github.com/matthew-08/react-weather-app',
     },
-    projectTechnology: ['JavaScript', 'HTML', 'Vanilla CSS'],
+    projectTechnology: ['React', 'JavaScript', 'HTML', 'Vanilla CSS'],
+  },
+  {
+    projectTitle: 'CV Maker',
+    projectDescription:
+      'An application which allows a user to create a CV / Resume and see their changes in real-time.  In this application I made extensive use of the useReducer hook.',
+    projectLinks: {
+      github: 'https://github.com/matthew-08/react-cv-builder-2',
+    },
+    projectTechnology: ['React', 'JavaScript', 'HTML', 'Vanilla CSS'],
+  },
+  {
+    projectTitle: 'Memory Game',
+    projectDescription:
+      "A game in which users must memorize cards they've clicked and try not to click the same card twice.  The game has multiple rounds and a score tracker.",
+    projectLinks: {
+      github: 'https://github.com/matthew-08/Memory-Game',
+    },
+    projectTechnology: ['React', 'JavaScript', 'HTML', 'Vanilla CSS'],
+  },
+  {
+    projectTitle: 'Shopping Cart',
+    projectDescription:
+      'A simple react application which mimics the front-end of a run-of-the-mill e-commerce store.',
+    projectLinks: {
+      github: 'https://github.com/matthew-08/react-shopping-cart',
+    },
+    projectTechnology: ['React', 'JavaScript', 'HTML', 'Vanilla CSS'],
+  },
+  {
+    projectTitle: 'ToDo',
+    projectDescription:
+      "A to-do tracker written in vanilla JavaScript.  The application utilizes the MVC pattern and stores the user's todos and todo folders in localStorage.",
+    projectLinks: {
+      github: 'https://github.com/matthew-08/top-ToDoList',
+    },
+    projectTechnology: ['JavaScript', 'HTML', 'Vanilla CSS', 'Webpack', 'NPM'],
   },
 ];
 

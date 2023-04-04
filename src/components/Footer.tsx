@@ -4,7 +4,7 @@ import { Icon } from '@iconify/react';
 function Footer() {
   return (
     <Flex mt="auto">
-      <VStack m="auto">
+      <VStack m="auto" pt="1rem">
         <Icon
           icon="radix-icons:github-logo"
           width="2rem"

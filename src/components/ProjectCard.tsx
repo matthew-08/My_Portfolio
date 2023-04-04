@@ -28,14 +28,16 @@ function ProjectCard({ project }: { project: Project }) {
         Technologies ⚡
       </Heading>
       <Text mb="1rem">{project.projectTechnology.join(', ')}</Text>
-      <Link
-        fontSize="1.3rem"
-        href={project.projectLinks.live}
-        color="blue.600"
-        as={Link}
-      >
-        🔗 Live
-      </Link>
+      {project.projectLinks.live && (
+        <Link
+          fontSize="1.3rem"
+          href={project.projectLinks.live}
+          color="blue.600"
+          as={Link}
+        >
+          🔗 Live
+        </Link>
+      )}
       <Link
         fontSize="1.3rem"
         href={project.projectLinks.github}
