@@ -16,7 +16,7 @@ function HomePage() {
   const { colorMode } = useColorMode();
   return (
     <PageLayout>
-      <Flex align="center" maxW="800px" mt="3rem" height="100%">
+      <Flex align="center" maxW="800px" height="100%">
         <VStack align="flex-start">
           <Heading
             fontFamily="Inter"
