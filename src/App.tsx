@@ -6,6 +6,7 @@ import theme from './theme';
 import HomePage from './components/HomePage';
 import Footer from './components/Footer';
 import About from './components/About';
+import Projects from './components/Projects';
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
         <Routes>
           <Route path="/" element={<HomePage />} />
           <Route path="/about" element={<About />} />
+          <Route path="/projects" element={<Projects />} />
         </Routes>
         <Footer />
       </BrowserRouter>

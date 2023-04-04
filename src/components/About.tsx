@@ -54,7 +54,7 @@ function About() {
             color={colorMode === 'dark' ? 'gray.400' : '#737373"'}
           >
             I'm a United States based full-stack engineer with a deep passion
-            for programming, creative-thinking, and problem solving. These days
+            for programming, creative thinking, and problem solving. These days
             I'm predomintaley working with React / TypeScript on the front end
             and Express / Node.JS on the backend. When I'm not hunched over in
             front of my computer I'm likely hunched over my guitar instead!
