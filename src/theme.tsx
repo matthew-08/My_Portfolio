@@ -1,4 +1,8 @@
-import { extendTheme, StyleFunctionProps } from '@chakra-ui/react';
+import {
+  extendTheme,
+  StyleFunctionProps,
+  useColorMode,
+} from '@chakra-ui/react';
 import { mode } from '@chakra-ui/theme-tools';
 
 const theme = extendTheme({
@@ -19,6 +23,9 @@ const theme = extendTheme({
       p: (props: StyleFunctionProps) => ({
         color: mode('gray.700', 'white'),
       }),
+      h1: {
+        color: mode('#404040', 'white'),
+      },
     },
     main: {
       black: '#404040',
