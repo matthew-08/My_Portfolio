@@ -73,9 +73,10 @@ function HomePage() {
                 display="inline-block"
                 fontSize="1.2rem"
                 color={colorMode === 'dark' ? 'gray.400' : ''}
-                as="span"
               >
-                TypeScript, JavaScript, React, Redux
+                TypeScript, JavaScript, React, Redux, ChakraUI, NodeJS, Express,
+                PostgreSQL, Redis, Firebase, Prisma, SQL, GraphQL, HTML/CSS,
+                Git, Webpack, AWS
               </Text>
             </Flex>
           </HStack>
