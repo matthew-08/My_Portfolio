@@ -9,6 +9,7 @@ import {
   Link,
 } from '@chakra-ui/react';
 import React from 'react';
+import { NavLink } from 'react-router-dom';
 import PageLayout from './PageLayout';
 import me from '../img/me.png';
 
@@ -63,9 +64,32 @@ function About() {
             working on various full-stack projects in order to hone my skills
             and integerate learned technologies into my workflow. Currently, I'm
             working on a full-stack e-commerce application which utilizes
-            GraphQL, Prisma, Typescript and more! You can check it out{' '}
-            <Link color="blue.500">here</Link> or check out all of my projects
-            <Link color="blue.500"> here</Link>.
+            GraphQL, Prisma, TypeScript and more! You can check it out{' '}
+            <Link
+              color="blue.500"
+              href="https://github.com/matthew-08/Shop_Frontend"
+            >
+              here
+            </Link>{' '}
+            or check out a list of my projects
+            <Link to="/projects" color="blue.500" as={NavLink}>
+              {' '}
+              here{' '}
+            </Link>
+            .
+            <br />
+            <br />
+            Outside of progamming I love language learning (currently focusing
+            on Vietnamese!), education, and jazz guitar. I'm an avid member of
+            <Link
+              color="blue.500"
+              href="https://www.theodinproject.com/dashboard"
+            >
+              {' '}
+              The Odin Project{' '}
+            </Link>{' '}
+            community and try to spend time every day offering assistance to
+            budding software developers in their Discord chat.
           </Text>
         </Flex>
       </Flex>
