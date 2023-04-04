@@ -13,7 +13,7 @@ function ProjectCard({ project }: { project: Project }) {
       borderColor="gray.400"
       pb="1rem"
     >
-      <Heading mb="1rem" fontFamily="inter">
+      <Heading mb="1rem" fontFamily="inter" mt="1rem">
         {project.projectTitle}
       </Heading>
       <Text fontSize="1.1rem" mb="1rem">
