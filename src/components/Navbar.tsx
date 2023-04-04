@@ -2,6 +2,7 @@ import React from 'react';
 import { HStack, List, ListItem } from '@chakra-ui/react';
 import { NavLink } from 'react-router-dom';
 import { v4 as uuid } from 'uuid';
+import ToggleColorMode from './ToggleColorMode';
 
 const navOptions = [
   {
@@ -34,6 +35,7 @@ function Navbar() {
           );
         })}
       </List>
+      <ToggleColorMode />
     </HStack>
   );
 }
