@@ -1,4 +1,3 @@
-import React from 'react';
 import {
   HStack,
   List,
@@ -8,7 +7,6 @@ import {
 } from '@chakra-ui/react';
 import { NavLink } from 'react-router-dom';
 import { v4 as uuid } from 'uuid';
-import { mode } from '@chakra-ui/theme-tools';
 import ToggleColorMode from './ToggleColorMode';
 import MobileMenu from './MobileMenu';
 
@@ -27,7 +25,7 @@ const navOptions = [
   },
   {
     optionName: 'Resume',
-    link: '',
+    link: 'https://drive.google.com/file/d/1VX6icKR_T4u5IUoZV1vXI45uOVppAlHz/view?usp=sharing',
   },
 ];
 
@@ -42,6 +40,7 @@ function Navbar() {
       padding={isSmallerThan700 ? '1rem' : '2rem'}
       borderBottom="1px solid"
       borderColor="gray.400"
+      ml="2rem"
     >
       {isSmallerThan700 ? (
         <MobileMenu />

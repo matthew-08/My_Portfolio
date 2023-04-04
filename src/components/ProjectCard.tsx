@@ -1,5 +1,4 @@
-import { Flex, Heading, Text, Link, Divider } from '@chakra-ui/react';
-import React from 'react';
+import { Flex, Heading, Text, Link } from '@chakra-ui/react';
 import { Project } from '../types';
 
 function ProjectCard({ project }: { project: Project }) {

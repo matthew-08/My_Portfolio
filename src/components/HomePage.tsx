@@ -7,10 +7,12 @@ import {
   HStack,
   IconButton,
 } from '@chakra-ui/react';
-import React from 'react';
 import { Icon } from '@iconify/react';
 import { EmailIcon } from '@chakra-ui/icons';
+import { Link } from 'react-router-dom';
 import PageLayout from './PageLayout';
+
+const mailto = 'mailto:matthewjcrosby1@gmail.com';
 
 function HomePage() {
   const { colorMode } = useColorMode();
@@ -39,6 +41,8 @@ function HomePage() {
           </Text>
           <HStack pt="1rem" mt="1rem" spacing="3">
             <IconButton
+              as="a"
+              href="https://github.com/matthew-08"
               aria-label="icon-button"
               size="lg"
               background="none"
@@ -49,9 +53,15 @@ function HomePage() {
               aria-label="icon-button"
               size="lg"
               background="none"
+              onClick={(e) => {
+                e.preventDefault();
+                window.location.href = mailto;
+              }}
               icon={<EmailIcon boxSize="3rem" />}
             />
             <IconButton
+              as="a"
+              href="https://www.linkedin.com/in/matthewjcsby"
               aria-label="icon-button"
               size="lg"
               background="none"

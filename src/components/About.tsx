@@ -2,14 +2,11 @@ import {
   Flex,
   HStack,
   Image,
-  VStack,
-  Text,
   useColorMode,
-  Heading,
   Link,
+  Text,
   useMediaQuery,
 } from '@chakra-ui/react';
-import React from 'react';
 import { NavLink } from 'react-router-dom';
 import PageLayout from './PageLayout';
 import me from '../img/me.png';
@@ -106,7 +103,7 @@ function About() {
               The Odin Project{' '}
             </Link>{' '}
             community and try to spend time every day offering assistance to
-            budding software developers in their Discord chat.
+            budding software developers in the community's Discord chat.
           </Text>
         </Flex>
       </Flex>

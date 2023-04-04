@@ -5,12 +5,14 @@ function Footer() {
   return (
     <Flex mt="auto">
       <VStack m="auto" pt="1rem">
-        <Icon
-          icon="radix-icons:github-logo"
-          width="2rem"
-          color="gray"
-          cursor="pointer"
-        />
+        <a href="https://github.com/matthew-08">
+          <Icon
+            icon="radix-icons:github-logo"
+            width="2rem"
+            color="gray"
+            cursor="pointer"
+          />
+        </a>
         <Text m="auto" textAlign="center">
           © Matthew Crosby 2023.
           <br />

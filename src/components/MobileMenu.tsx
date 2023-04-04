@@ -4,11 +4,6 @@ import {
   MenuButton,
   MenuList,
   MenuItem,
-  MenuItemOption,
-  MenuGroup,
-  MenuOptionGroup,
-  MenuDivider,
-  Button,
   Flex,
   IconButton,
 } from '@chakra-ui/react';
@@ -31,7 +26,7 @@ const navOptions = [
   },
   {
     optionName: 'Resume',
-    link: '',
+    link: 'https://drive.google.com/file/d/1VX6icKR_T4u5IUoZV1vXI45uOVppAlHz/view?usp=sharing',
   },
 ];
 function MobileMenu() {

@@ -1,5 +1,4 @@
-import { Divider, Flex, Heading, Box, VStack } from '@chakra-ui/react';
-import React from 'react';
+import { Flex, Heading, Box, VStack } from '@chakra-ui/react';
 import { v4 as uuid } from 'uuid';
 import { Project } from '../types';
 import PageLayout from './PageLayout';
