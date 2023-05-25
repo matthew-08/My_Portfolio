@@ -11,6 +11,8 @@ import { Icon } from '@iconify/react';
 import { EmailIcon } from '@chakra-ui/icons';
 import { Link } from 'react-router-dom';
 import PageLayout from './PageLayout';
+import HomePageHeading from './HomePageHeading';
+import TextLink from './TextLink';
 
 const mailto = 'mailto:matthewjcrosby1@gmail.com';
 
@@ -65,17 +67,8 @@ function HomePage() {
               icon={<Icon icon="mdi:linkedin" width="3rem" />}
             />
           </HStack>
-          <Flex width="100%" borderBottom="1px solid" borderColor="gray.400">
-            <Heading
-              mt="1rem"
-              mb="0.5rem"
-              fontFamily="Inter"
-              color={colorMode === 'dark' ? 'white' : '#404040'}
-            >
-              My Skillset:
-            </Heading>
-          </Flex>
-          <HStack>
+          <HomePageHeading title="Skills" />
+          <HStack mt="2rem">
             <Flex>
               <Text
                 display="inline-block"
@@ -86,6 +79,23 @@ function HomePage() {
                 Jest, PostgreSQL, Redis, Firebase, Prisma, SQL, GraphQL,
                 HTML/CSS, Git, Webpack, AWS
               </Text>
+            </Flex>
+          </HStack>
+          <HomePageHeading title="Recent Projects" />
+          <HStack mt="4rem">
+            <Flex fontSize="1.2rem" flexDir="column">
+              <TextLink
+                link="https://github.com/matthew-08/ts_ppt_text/tree/main"
+                text="TypeScript PowerPoint Generator"
+              />
+              <TextLink
+                link="https://unrealshopnext.vercel.app/"
+                text="Unreal"
+              />
+              <TextLink
+                link="https://coupon-client.vercel.app/"
+                text="SuperCoupon"
+              />
             </Flex>
           </HStack>
         </VStack>

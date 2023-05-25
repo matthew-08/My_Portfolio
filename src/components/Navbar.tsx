@@ -25,7 +25,7 @@ const navOptions = [
   },
   {
     optionName: 'Resume',
-    link: 'https://drive.google.com/file/d/1VX6icKR_T4u5IUoZV1vXI45uOVppAlHz/view?usp=sharing',
+    link: 'https://drive.google.com/file/d/12ld9PBQ0Or2vqe8Y4-S5BXrZQ5C7WnJy/view?usp=sharing',
   },
 ];
 
