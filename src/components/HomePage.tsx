@@ -24,9 +24,7 @@ function HomePage() {
             fontFamily="Inter"
             color={colorMode === 'dark' ? 'white' : '#404040'}
           >
-            Hello! 🤘
-            <br />
-            I'm Matthew Crosby
+            Matthew Crosby
           </Heading>
           <Text
             fontSize="1.2rem"
