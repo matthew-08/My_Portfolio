@@ -35,7 +35,6 @@ function HomePage() {
             everything JavaScript, including React / TypeScript on the front-end
             and Node / Express on the backend.
             <br />
-            <br />I embrace bugs!🪲 (just not the crawly ones)
           </Text>
           <HStack pt="1rem" mt="1rem" spacing="3">
             <IconButton

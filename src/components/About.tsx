@@ -94,16 +94,7 @@ function About() {
             <br />
             <br />
             Outside of progamming I love language learning (currently focusing
-            on Vietnamese!), education, and jazz guitar. I'm an avid member of
-            <Link
-              color="blue.500"
-              href="https://www.theodinproject.com/dashboard"
-            >
-              {' '}
-              The Odin Project{' '}
-            </Link>{' '}
-            community and try to spend time every day offering assistance to
-            budding software developers in the community's Discord chat.
+            on Vietnamese), education, jazz guitar, and parmesan cheese.
           </Text>
         </Flex>
       </Flex>
