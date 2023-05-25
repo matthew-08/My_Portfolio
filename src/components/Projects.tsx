@@ -20,7 +20,7 @@ const projects: Project[] = [
     projectTitle: 'Unreal Store',
     projectDescription: `The Unreal Store is an e-commerce platform 
     that uses a GraphQL API to handle user sessions and authentication. 
-    The application integrates with the Stripe API to securely process payments by redirecting users to complete their transactions."
+    The application integrates with the Stripe API to securely process payments by redirecting users to complete their transactions.
     `,
     projectLinks: {
       github: 'https://github.com/matthew-08/next_shop',
