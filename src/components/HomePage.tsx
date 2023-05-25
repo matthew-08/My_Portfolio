@@ -84,8 +84,8 @@ function HomePage() {
                 color={colorMode === 'dark' ? 'gray.400' : ''}
               >
                 TypeScript, JavaScript, React, Redux, ChakraUI, NodeJS, Express,
-                PostgreSQL, Redis, Firebase, Prisma, SQL, GraphQL, HTML/CSS,
-                Git, Webpack, AWS
+                Jest, PostgreSQL, Redis, Firebase, Prisma, SQL, GraphQL,
+                HTML/CSS, Git, Webpack, AWS
               </Text>
             </Flex>
           </HStack>
