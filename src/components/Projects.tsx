@@ -10,11 +10,33 @@ const projects: Project[] = [
     projectDescription: `TypeScript PowerPoint Text is an 
     NPM library designed for  interaction and manipulation of text within PowerPoint 
     files. With this library, you can interface with pre-generated PowerPoint templates, 
-    enabling you to modify and customize text content."`,
+    enabling you to modify and customize text content.`,
     projectLinks: {
       github: 'https://github.com/matthew-08/ts_ppt_text',
     },
     projectTechnology: ['TypeScript', 'Node.JS'],
+  },
+  {
+    projectTitle: 'Unreal Store',
+    projectDescription: `The Unreal Store is an e-commerce platform 
+    that uses a GraphQL API to handle user sessions and authentication. 
+    The application integrates with the Stripe API to securely process payments by redirecting users to complete their transactions."
+    `,
+    projectLinks: {
+      github: 'https://github.com/matthew-08/next_shop',
+      live: 'https://next-shop-p2q6.vercel.app/',
+    },
+    projectTechnology: [
+      'TypeScript',
+      'Jest',
+      'React Testing Library',
+      'React',
+      'PostgreSQL',
+      'GraphQL',
+      'Pothos',
+      'Prisma',
+      'NextJS',
+    ],
   },
   {
     projectTitle: 'Langooo 💬',
