@@ -6,6 +6,17 @@ import ProjectCard from './ProjectCard';
 
 const projects: Project[] = [
   {
+    projectTitle: 'TS PowerPoint Text',
+    projectDescription: `TypeScript PowerPoint Text is an 
+    NPM library designed for  interaction and manipulation of text within PowerPoint 
+    files. With this library, you can interface with pre-generated PowerPoint templates, 
+    enabling you to modify and customize text content."`,
+    projectLinks: {
+      github: 'https://github.com/matthew-08/ts_ppt_text',
+    },
+    projectTechnology: ['TypeScript', 'Node.JS'],
+  },
+  {
     projectTitle: 'Langooo 💬',
     projectDescription: `Langooo is a real-time chat application aimed at language learners. The app app utilizes Socket.io, a Redis cache, Redux, a session-based authentication system, and a PostgreSQL database.  Some notable featuresinclude the ability to track other user's online status, edit and delete messages in real time, and upload profile images`,
     projectLinks: {
