@@ -1,14 +1,15 @@
 import { SunIcon, MoonIcon } from '@chakra-ui/icons';
-import { Button, useColorMode } from '@chakra-ui/react';
+import { Button, useColorMode, useMediaQuery } from '@chakra-ui/react';
 
 function ToggleColorMode() {
+  const [isSmallerThan700] = useMediaQuery('(max-width:700px)');
   const { colorMode, toggleColorMode } = useColorMode();
   return (
     <Button
-      ml="5rem"
       background="none"
       onClick={() => toggleColorMode()}
       size="lg"
+      ml={['0.5rem', '0.5rem', '0.5rem', 'auto']}
     >
       {colorMode === 'dark' ? (
         <MoonIcon boxSize="2rem" />

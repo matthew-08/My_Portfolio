@@ -1,4 +1,5 @@
 import {
+  Flex,
   HStack,
   List,
   ListItem,
@@ -33,19 +34,18 @@ function Navbar() {
   const [isSmallerThan700] = useMediaQuery('(max-width: 700px)');
   const { colorMode } = useColorMode();
   return (
-    <HStack
+    <Flex
       as="nav"
-      width="100%"
+      minW="100%"
       align="center"
       padding={isSmallerThan700 ? '1rem' : '2rem'}
       borderBottom="1px solid"
       borderColor="gray.400"
-      ml="2rem"
     >
       {isSmallerThan700 ? (
         <MobileMenu />
       ) : (
-        <HStack gap="1rem" as={List} spacing="2rem" ml="auto" mr="auto">
+        <HStack gap="1rem" as={List} spacing="2rem" ml="auto">
           {navOptions.map((option) => {
             return (
               <ListItem
@@ -62,7 +62,7 @@ function Navbar() {
         </HStack>
       )}
       <ToggleColorMode />
-    </HStack>
+    </Flex>
   );
 }
 

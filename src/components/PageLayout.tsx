@@ -1,4 +1,4 @@
-import { Flex, useMediaQuery } from '@chakra-ui/react';
+import { Flex, useMediaQuery, Fade } from '@chakra-ui/react';
 import { ReactNode } from 'react';
 
 function PageLayout({ children }: { children: ReactNode }) {
@@ -11,7 +11,7 @@ function PageLayout({ children }: { children: ReactNode }) {
       pt="3rem"
       px={isSmallerThan800 ? '1rem' : '0'}
     >
-      {children}
+      <Fade in>{children}</Fade>
     </Flex>
   );
 }
