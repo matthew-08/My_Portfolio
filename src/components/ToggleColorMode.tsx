@@ -9,7 +9,7 @@ function ToggleColorMode() {
       background="none"
       onClick={() => toggleColorMode()}
       size="lg"
-      ml={['0.5rem', '0.5rem', '0.5rem', 'auto']}
+      ml={['0.5rem', '0.5rem', '0.5rem', '2rem']}
     >
       {colorMode === 'dark' ? (
         <MoonIcon boxSize="2rem" />

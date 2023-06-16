@@ -34,10 +34,10 @@ function MobileMenu() {
     <Flex ml="auto">
       <Menu>
         <MenuButton as={IconButton} boxSize="50px" icon={<HamburgerIcon />} />
-        <MenuList minWidth="300px" fontSize="2rem">
+        <MenuList minWidth="200px" fontSize="1.2rem">
           {navOptions.map((option) => {
             return (
-              <MenuItem as={NavLink} key={uuid()} to={option.link}>
+              <MenuItem as={NavLink} key={uuid()} to={option.link} mb="0.5rem">
                 {option.optionName}
               </MenuItem>
             );

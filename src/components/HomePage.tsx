@@ -10,6 +10,7 @@ import {
 import { Icon } from '@iconify/react';
 import { EmailIcon } from '@chakra-ui/icons';
 import { Link } from 'react-router-dom';
+import { color } from 'framer-motion';
 import PageLayout from './PageLayout';
 import HomePageHeading from './HomePageHeading';
 import TextLink from './TextLink';
@@ -33,13 +34,15 @@ function HomePage() {
             color={colorMode === 'dark' ? 'gray.400' : ''}
           >
             I'm a full stack developer with a passion for creative thinking and
-            problem solving. My current weapons of choice are anything and
-            everything JavaScript, including React / TypeScript on the front-end
-            and Node / Express on the backend.
+            problem solving. <br />
+            My current weapons of choice are anything and everything JavaScript,
+            including React and TypeScript on the front-end and Node / Express
+            on the backend.
             <br />
           </Text>
           <HStack pt="1rem" mt="1rem" spacing="3">
             <IconButton
+              color={colorMode === 'dark' ? 'white' : '#404040'}
               as="a"
               href="https://github.com/matthew-08"
               aria-label="icon-button"
@@ -49,6 +52,7 @@ function HomePage() {
             />
             <IconButton
               mt="2rem"
+              color={colorMode === 'dark' ? 'white' : '#404040'}
               aria-label="icon-button"
               size="lg"
               background="none"
@@ -59,6 +63,7 @@ function HomePage() {
               icon={<EmailIcon boxSize="3rem" />}
             />
             <IconButton
+              color={colorMode === 'dark' ? 'white' : '#404040'}
               as="a"
               href="https://www.linkedin.com/in/matthewjcsby"
               aria-label="icon-button"
